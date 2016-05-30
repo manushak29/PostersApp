@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:textSize="18dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="Street" />
+
+            <TextView
+                android:id="@+id/address_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/address"
+                android:layout_toRightOf="@+id/address"
+                android:text="Norberto Crossing" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/city"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="City" />
+
+            <TextView
+                android:id="@+id/city_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/city"
+                android:layout_toRightOf="@+id/city"
+                android:text="South Christy" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/zipcode"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="Zipcode" />
+
+            <TextView
+                android:id="@+id/zipcode_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/zipcode"
+                android:layout_toRightOf="@+id/zipcode"
+                android:text="23505-1337" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Open Map"
+            android:background="@color/orange"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            ></Button>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
